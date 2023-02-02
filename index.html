@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <div id="header"><h1 align="center"><i>Sorting Visualizer</i></h1></div>
+    <br>
+    
+    <nav>
+        <div class="inrow">
+            <div >
+                <button type="button" id="reset" class="newArray" >New Array</button>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;   
+            <div  id="size1">
+                <span id="size"> Array<br>
+                    <input id="arr_sz"  type="range" min="15" max="40" step=1 value=40>  
+                </span>
+            </div>  
+              &nbsp; &nbsp; &nbsp;  &nbsp;         
+            <div>  
+                <span id="speed">  Speed <br>
+            <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=40>   
+                </span>
+              
+            </div>
+            <div class="sorting_button">
+                <button type="button" id="b1" class="bubbleSort " >Bubble Sort</button>
+                <button type="button" id="b2" class="selectionSort">Selection Sort</button>
+                <button type="button" id="b3" class="insertionSort">Insertion Sort</button>
+                <button type="button" id="b4" class=" quickSort">Quick Sort</button>
+                <button type="button" id="b5" class=" mergeSort">Merge Sort</button>
+            </div>
+        </div>
+    </nav>
+</header>
+<body class="p-3 mb-2 ">   
+   <div  class="container-fluid">
+    <span id="bars" class="flex-container"></span>
+    <span id="description" class="flex-container2">
+
+        <div id="default">
+          <p class="content">
+    
+            <h3>  What is Sorting?</h3>
+            <br>
+            <P>Sorting is a process of ordering or placing a list of elements from a collection in some kind of order. It is nothing but storage of data in sorted order. Sorting can be done in ascending and descending order. It arranges the data in a sequence which makes searching easier.</P>
+           <br>
+           Sorting can be performed using several techniques, as follows:
+            <ol type="1">
+                <li>Bubble Sort</li>
+                <li>Selection Sort</li>
+                <li>Insertion Sort</li>
+                <li>Quick Sort</li>
+                <li>Merge Sort</li>
+            </ol>
+        
+        </p> 
+        </div>
+
+    </span>
+
+   </div>
+ 
+  
+     
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="index.js/sorting.js"></script>
+    <script src="index.js/bubble.js"></script>
+    <script src="index.js/insertion.js"></script>
+    <script src="index.js/merge.js"></script>
+    <script src="index.js/quick.js"></script>
+    <script src="index.js/selection.js"></script>
+</body>
+</html>
